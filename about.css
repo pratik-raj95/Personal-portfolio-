@@ -1,0 +1,214 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 20px 10%;
+    background-color: #463eb8c8;
+}
+
+/* Style the logo */
+.logo {
+    font-size: 20px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    color: white;
+}
+
+.logo span {
+    color: #f1c40f;
+    font-size: 36px;
+}
+
+/* Style the navigation menu */
+.navlist {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.navlist li {
+    margin-right: 20px;
+}
+
+.navlist a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+/* Style the menu icon for mobile */
+#menu-icon {
+    display: none;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+/* Media query for responsive design */
+@media (max-width: 768px) {
+    .navlist {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        background-color: #3498db;
+        width: 100%;
+    }
+
+    .navlist.active {
+        display: flex;
+    }
+
+    .navlist li {
+        margin: 10px 0;
+        text-align: center;
+    }
+
+    #menu-icon {
+        display: block;
+    }
+}
+
+
+
+body, h1, h2, h3, p {
+    margin: 0;
+    padding: 0;
+}
+
+/* Apply a background color to the whole page */
+body {
+    background-color:  #7d7b9bc8;
+    font-family: Arial, sans-serif;
+}
+
+/* Style the about section */
+.about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+/* Style the image and info section */
+.img-about {
+    text-align: center;
+}
+
+.img-about img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 50%;
+    opacity: 0.8;
+}
+
+.info-about {
+    display: flex;
+    justify-content: space-around;
+    background-color: #f1f1f1;
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+.info-about div {
+    text-align: center;
+}
+
+.info-about span {
+    font-size: 24px;
+    color: #333;
+}
+
+.info-about p {
+    color: #777;
+}
+
+/* Style the about content */
+.about-content {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.about-content span {
+    font-size: 24px;
+    color: #333;
+}
+
+.about-content h2 {
+    font-size: 36px;
+    color: #444;
+}
+
+.about-content h3 {
+    font-size: 24px;
+    color: #666;
+}
+
+.about-content p {
+    color: #777;
+    margin-top: 10px;
+}
+
+.btn-box {
+    margin-top: 20px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #3498db;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.btn:hover {
+    background-color: #297fb8;
+}
+/* Responsive design for smaller screens */
+@media screen and (max-width: 768px) {
+    .navlist {
+      display: none; /* Hide the navigation links by default */
+      flex-direction: column;
+      position: absolute;
+      top: 50px;
+      left: 0;
+      background-color: #a0b6e9;
+      width: 100%;
+      text-align: center; /* Center the links vertically */
+      z-index: 1; /* Ensure it appears above other content */
+    }
+  
+    .navlist.active {
+      display: flex; /* Show navigation links when the menu is active */
+    }
+  
+    .navlist li {
+      margin: 10px 0;
+    }
+  
+    #menu-icon {
+      display: block; /* Show the hamburger icon */
+    }
+  
+    /* Style the hamburger icon */
+    #menu-icon.bx-menu:after {
+      content: "\f394"; /* Unicode character for 'close' icon (adjust as needed) */
+      font-family: 'Boxicons'; /* You may need to include the Boxicons font */
+    }
+  }
+  

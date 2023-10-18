@@ -1,0 +1,180 @@
+/* Reset default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Set a background color and font styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #dbdbe2c8;
+    color: #333;
+}
+
+/* Header styles */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 20px 10%;
+    background-color: #463eb8c8;
+    font-size: bold;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.navlist {
+    list-style: none;
+    display: flex;
+}
+
+.navlist li {
+    margin: 0 15px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+}
+
+/* Home section styles */
+.home {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #7d7b9bc8;
+}
+
+.home-content {
+    width: 50%;
+    padding: 20px;
+}
+
+.home h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.change-text h3 {
+    font-size: 18px;
+    font-weight: normal;
+}
+
+.info-box {
+    display: flex;
+    margin-top: 20px;
+}
+
+.info-box h5 {
+    font-size: 18px;
+}
+
+.info-box span {
+    margin-left: 10px;
+}
+
+.btn-box {
+    margin-top: 20px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    margin-right: 10px;
+    border-radius: 5px;
+}
+
+.social-icons {
+    margin-top: 20px;
+}
+
+.social-icons a {
+    text-decoration: none;
+    color: #333;
+    margin-right: 10px;
+    font-size: 24px;
+}
+
+/* Footer styles */
+footer {
+    background-color: #463eb8c8;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+footer h1 {
+    font-size: 24px;
+}
+
+footer p {
+    font-size: 14px;
+}
+
+/* Make it responsive */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px;
+    }
+
+    .navlist {
+        flex-direction: column;
+        margin-top: 10px;
+    }
+
+    .home {
+        flex-direction: column;
+    }
+
+    .home-content {
+        width: 100%;
+        text-align: center;
+    }
+
+    .home h1 {
+        font-size: 28px;
+    }
+
+    .home-image {
+        position: relative;
+        opacity: 1;
+    }
+    
+    .img-box {
+        text-align: center;
+    }
+    
+    .img-box img {
+        max-width: 450px;
+        height: auto;
+        border-radius: 10%;
+    }
+/* Media query for screens narrower than 768px */
+@media (max-width: 768px) {
+    .home {
+        flex-direction: column;
+    }
+
+    .home-content {
+        width: 100%;
+        text-align: center;
+    }
+
+    .home-image {
+        margin-top: 20px;
+    }
+}
+}
